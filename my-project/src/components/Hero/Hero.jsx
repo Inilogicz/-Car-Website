@@ -2,10 +2,11 @@ import React from 'react';
 import carImage from '../../assets/car.png'; 
 import buildingImage from '../../assets/building.jpg';
 import{FaArrowRight} from 'react-icons/fa'
+import Navbar from '../Navbar/Navbar';
 
 
 const bgImage = {
-  bacgroundImage: `url(${buildingImage})`,
+  backgroundImage: `url(${buildingImage})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center", 
@@ -15,17 +16,17 @@ const bgImage = {
 const Hero = () => {
   return (
     <main style={bgImage}>
-      <div className='bg-gradient-to-r from-primary to bg-primaryDark/50'>
+      <div className='bg-gradient-to-r from-primary to bg-primaryDark/90'>
         <div className="container text-white" >
             {/* {navbar components} */}
-
+            <Navbar/>
             {/* {Hero section} */}
             
             <section className='grid grid-cols-1 md:grid-cols-2 place-items-center min-h-[800px] '>
                 {/* {textarea} */}
 
             <div className='space-y-8'> 
-                <h1 classname=" text-5xl lg:text-7xl  font-bold leading-tight ">
+                <h1 className="uppercase text-5xl lg:text-7xl  font-bold leading-tight ">
                    Honda <br /> {" "}
                       <span className=' text-transparent text-outline '>
                         Sports EV

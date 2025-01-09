@@ -6,6 +6,7 @@
     .text-outline{
         -webkit-text-stroke: 2px white;    
     }
+    
 }
 
 @layer components {
@@ -13,5 +14,8 @@
         @apply border-[3px] rounded-xl px-6 py-2;
 
 
+    }
+    .rounded-icons{
+        @apply h-[30px] w-[30px] flex items-center justify-center cursor-pointer bg-white/30 rounded-full p-2 hover:scale-110 duration-200;
     }
 }
