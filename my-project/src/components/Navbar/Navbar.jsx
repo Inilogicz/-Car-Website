@@ -15,12 +15,12 @@ const NavMenu =[
   link: '#',
 },
   {
-  id: 1,
+  id: 3,
   title: 'Cars',
   link: '#',
 },
   {
-  id: 1,
+  id: 4,
   title: 'Contact',
   link: '#',
 },
