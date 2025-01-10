@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../assets/honda-logo.png';
 import{GiHamburgerMenu} from 'react-icons/gi';
 import{FaSearch} from 'react-icons/fa';
-
+import {motion} from 'framer-motion';
 const NavMenu =[
   {
   id: 1,
@@ -27,9 +27,16 @@ const NavMenu =[
 ];
 const Navbar = () => {
   return (
-    <main className='py-10 text-white'>
-      <div className="container">
-        <div className='flex justify-between items-center'>
+    <main 
+     
+    className='relative top-0 left-0 text-white w-full pt-10 z-20'>
+      <motion.div 
+       initial ={{opacity:0}}
+       whileInView={{opacity:1, y:0}}
+      className="container">
+        <div 
+         
+        className='flex justify-between items-center'>
           {/* {logosection} */}
           
           <div >
@@ -59,15 +66,16 @@ const Navbar = () => {
                 <div className='rounded-icons'>
                   <GiHamburgerMenu/>
                 </div>
-                <div>
-                  <FaSearch/>
+                <div  className='rounded-icons'>
+                  <FaSearch className='text-xl'/>
                 </div>
               </div>
 
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }
 
 export default Navbar;
+// md:h-[300px] md:w[300px] 
